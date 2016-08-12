@@ -15,7 +15,6 @@
     
     <groupId>it.luigibennardis</groupId>
     <artifactId>00D-bookABattery_SERVICE</artifactId>
-    <version>1.0.0.BUILD-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
