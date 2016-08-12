@@ -232,7 +232,7 @@
 									<replacements>
 											<replacement>
 												<token>@jar_name@</token>
-												<value>00D_bookABattery_SERVICE</value>
+												<value>00D-bookABattery_SERVICE</value>
 											</replacement>
 											
 											<replacement>
