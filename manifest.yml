@@ -1,12 +1,12 @@
 ---
 applications:
-  - name: 00-batteryService
+  - name: 00D-bookAB0attery_SERVICE
     memory: 1024M
     instances: 1
     buildpack: java_buildpack
-    host: 00-batteryService
+    host: 00D-bookAB0attery_SERVICE
     domain: cfapps.io
-    path: target/00-batteryService-1.0.0.BUILD-SNAPSHOT.jar
+    path: target/00D-bookAB0attery_SERVICE-1.0.0.BUILD-SNAPSHOT.jar
     services:
      - mySqlBackingServices
     datasource:
