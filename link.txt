@@ -1,4 +1,5 @@
-
+drop database bookABattery_DB  
+create database bookABattery_DB 
 CREATE USER 'bab_USER'@'localhost' IDENTIFIED BY 'bab_USER';
 CREATE DATABASE IF NOT EXISTS bookABattery_DB;
 GRANT ALL ON bookABattery_DB.* TO 'bab_USER'@'localhost';
@@ -7,15 +8,34 @@ GRANT ALL ON bookABattery_DB.* TO 'bab_USER'@'localhost';
 
 prova
 
-http://localhost:8080/h2-console
+http://localhost:7111/h2-console
 
-http://localhost:8080 
+http://localhost:7111/bookABattery/addBooking/STAZ001/BATT011/ROMA/42.984545454/16.74444/
 
-http://localhost:8080/batterie/search/findBystazione?stazione=STA002
 
-http://sdpsvrsa094:7111/batterie/search/findBystazione?stazione=STA002
 
-http://localhost:8080/prenotazioni/aggiungi/STAZ001/BATT001/ROMA/42/16
 
- drop database batteryService  
- create database batteryService 
+ 
+ 
+ESEMPIO RICERCA DALL'INDIRIZZO : 
+41.90231, 12.4832
+
+
+
+FIND NEAREST STATION
+http://localhost:7111/findNearestStation/41.90231/12.4832/100/
+
+
+
+
+SELECT stationid,address,city,latitude,longitude,3956 * 2 * (ASIN(SQRT(POWER(SIN((41.90231 - abs(latitude)) * pi()/180/2),2)+ COS(41.90231 * pi()/180 )*COS(abs(latitude) *  pi()/180)*POWER (SIN((12.4832 - longitude)) *  pi()/180/2, 2)))) AS distance FROM station_address WHERE (3956 * 2 * (ASIN(SQRT(POWER(SIN((41.90231 - abs(latitude)) * pi()/180/2),2)+ COS(41.90231 * pi()/180 )*COS(abs(latitude) *  pi()/180)*POWER (SIN((12.4832 - longitude)) *  pi()/180/2, 2))))) < 100 ORDER BY DISTANCE;
+
+
+
+
+
+
+
+
+
+

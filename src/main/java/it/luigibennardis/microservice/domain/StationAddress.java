@@ -67,7 +67,7 @@ public class StationAddress implements Serializable{
 
 	public String getLatitude() {
 		//return latitudine;
-		System.out.println("latitude" + latitude);
+		//System.out.println("latitude" + latitude);
 		DecimalFormat myFormatter = new DecimalFormat("###.########");
 		String output = myFormatter.format(latitude);
 		
@@ -83,7 +83,7 @@ public class StationAddress implements Serializable{
 	public String getLongitude() {
 		//return longitude;
 	
-		System.out.println("longitude" + longitude);
+		//System.out.println("longitude" + longitude);
 		DecimalFormat myFormatter = new DecimalFormat("###.########");
 		String output = myFormatter.format(longitude);
 		
