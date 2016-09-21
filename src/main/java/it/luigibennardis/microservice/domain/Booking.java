@@ -51,21 +51,21 @@ public class Booking {
                 }
     
     
-	public String getBatteryCode() {
+	public String getBatterycode() {
 		return batterycode;
 	}
 	
     
 	
-	public void setBatteryCode(String batteryCode) {
+	public void setBatterycode(String batteryCode) {
 		this.batterycode = batteryCode;
 	}
 
-	public String getStationId() {
+	public String getStationid() {
 		return stationid;
 	}
 
-	public void setStationId(String stationId) {
+	public void setStationid(String stationId) {
 		this.stationid = stationId;
 	}
 
